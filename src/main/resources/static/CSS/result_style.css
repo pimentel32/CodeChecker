@@ -1,0 +1,78 @@
+body {
+	font-family: 'Fauna One', serif;
+  	font-size: 16px;  
+	background-image: url("/images/upload_bg.png");
+}
+
+h1{
+	font-family: Cinzel, serif;
+  	font-size: 30px;  
+	color: white;
+  	text-shadow: 2px 2px 4px #000000;
+  	border:30px;
+  	text-align: center;
+}
+
+h3{
+	font-family: Cinzel, serif;
+  	font-size: 20px;  
+	color: white;
+  	text-shadow: 2px 2px 4px #000000;
+  	border:30px;
+  	text-align: center;
+  	border-top: 1px solid #ccc;
+  	padding: 10px;
+}
+
+span{
+	font-weight: bold;
+}
+
+a {
+    background-color: #d46f6f;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    box-shadow: 4px 5px 7px rgb(0 0 0 / 20%);
+}
+
+/* mouse over link */
+a:hover {
+  background-color: #8e3232;
+  box-shadow: 4px 5px 7px rgb(0 0 0 / 40%);
+}
+
+.input-container{
+	margin-bottom: 20px;
+}
+
+.uploaded-files {
+	margin: 20px auto;
+    font-size: 13px;
+    font-style: italic; 
+}
+
+.link-container {
+	display: flex;
+	margin-left: 60px;
+    margin-right: 60px;
+}
+
+.info-container {
+	background-color: #ffffffa1;
+	margin:40px;
+	display: block;
+	padding: 20px;
+}
+
+
+
+
+
+
+

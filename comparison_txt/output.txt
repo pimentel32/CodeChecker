@@ -1,0 +1,69 @@
+BRUMBY CODE CHECKER
+ Time stamp: 2024-04-26 at 17:56:00 EDT
+ Percent minimum: 0
+ File extension: .java
+ Number of files: 2
+ Number of files affected: 1
+ Number of methods affected: 6
+
+Duplicate found in the following files:
+
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  similarity:  18
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\LinesAffected.java:  getLinesAffected:  18
+----------> 11.25%
+
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  naiveWeight:  30
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\LinesAffected.java:  getLinesAffected:  18
+----------> 5.67%
+
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  naiveWeight:  30
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  similarity:  18
+----------> 34.98%
+
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  cosineSimilarity:  56
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\LinesAffected.java:  getLinesAffected:  18
+----------> 1.18%
+
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  cosineSimilarity:  56
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  similarity:  18
+----------> 6.95%
+
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  cosineSimilarity:  56
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  naiveWeight:  30
+----------> 13.00%
+
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  LCSLength:  133
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\LinesAffected.java:  getLinesAffected:  18
+----------> 1.23%
+
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  LCSLength:  133
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  similarity:  18
+----------> 8.27%
+
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  LCSLength:  133
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  naiveWeight:  30
+----------> 17.50%
+
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  LCSLength:  133
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  cosineSimilarity:  56
+----------> 54.85%
+
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  findMethod:  196
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\LinesAffected.java:  getLinesAffected:  18
+----------> 1.33%
+
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  findMethod:  196
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  similarity:  18
+----------> 8.85%
+
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  findMethod:  196
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  naiveWeight:  30
+----------> 17.32%
+
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  findMethod:  196
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  cosineSimilarity:  56
+----------> 41.53%
+
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  findMethod:  196
+C:\Users\denis\NewEclipseWorkspace\checker\uploaded_files\Parser.java:  LCSLength:  133
+----------> 55.24%

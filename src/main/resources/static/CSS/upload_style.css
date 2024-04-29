@@ -1,0 +1,84 @@
+body {
+	font-family: 'Fauna One', serif;
+  	font-size: 16px;  
+	background-image: url("/images/upload_bg.png");
+}
+
+header, footer{
+	background: #fffbd5;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #b20a2c, #fffbd5);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #b20a2c, #fffbd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: white;
+	font-size: small;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+h1{
+	font-family: Cinzel, serif;
+  	font-size: 30px;  
+	color: white;
+  	text-shadow: 2px 2px 4px #000000;
+  	border:30px;
+  	text-align: center;
+}
+
+.outline-block {
+    background-color: #ffffffa1;
+    border-radius: 30px;
+	display: block;
+	padding: 10px;
+	display: inline-block;
+	margin: 40px;
+}
+
+.outline-block p {
+  margin: 30px;
+}
+
+.outline-block div {
+	margin:20px;
+}
+
+.file-uploader{
+  background-color: #ffffff90;
+  color: #242424;
+  padding: 12px;
+  max-width: 400px;
+  height: auto;
+  margin: 4em auto;
+}
+
+.input-area{
+	margin: 20px;
+}
+
+.input-area label{
+	margin:2px;
+}
+
+.file-chooser {
+  padding: 1em;
+  transition: background-color 1s, height 1s;
+  width: 90%;
+  margin: 0.5em auto;
+}
+.file-chooser p {
+  font-size: 18px;
+  padding-top: 1em;
+}
+
+
+.submit-button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5em;
+  padding: 1em;
+  background-color:#95b0a7;
+  color: white;
+}
+.submit-button:hover {
+  background-color: #a7d7c8;
+}
