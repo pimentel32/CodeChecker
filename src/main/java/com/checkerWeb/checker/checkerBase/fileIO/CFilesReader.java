@@ -66,6 +66,4 @@ public class CFilesReader {
 	public static String getRefFile() {
 		return refFile;
 	}
-
-	
 }

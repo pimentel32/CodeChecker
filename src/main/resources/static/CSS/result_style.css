@@ -28,7 +28,7 @@ span{
 	font-weight: bold;
 }
 
-a {
+.link-container a {
     background-color: #d46f6f;
     color: white;
     padding: 20px 20px;

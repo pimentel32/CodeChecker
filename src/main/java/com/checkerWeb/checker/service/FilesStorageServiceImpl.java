@@ -1,5 +1,6 @@
-/*https://www.bezkoder.com/thymeleaf-multiple-file-upload/
- * */
+/* 
+ * Original code from https://www.bezkoder.com/thymeleaf-multiple-file-upload/
+ */
 package com.checkerWeb.checker.service;
 
 import java.io.IOException;
@@ -65,7 +66,7 @@ public class FilesStorageServiceImpl implements FilesStorageService{
 	public void deleteAll() {
 		 FileSystemUtils.deleteRecursively(root.toFile());
 		
-	}
+	} 
 
 	@Override
 	public Stream<Path> loadAll() {

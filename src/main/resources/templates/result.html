@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+	<title>Submission Successful</title>
 	<meta charset="ISO-8859-1">
-	<title>Registration Success</title>
 	<meta name="viewport" content="width=device-width" />
-	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-	    <link rel="stylesheet" href="CSS/result_style.css" />
-	    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One">
+	<link rel="stylesheet" href="CSS/result_style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One">
 </head>
-
 <body>
 	<h1>RESULT</h1>
 	<div class="link-container">
@@ -25,6 +24,5 @@
 		   	<div class=uploaded-files th:each="message : ${messages}">[[${message}]]</div>
 		</form>
 	</div>
-	
 </body>
 </html>

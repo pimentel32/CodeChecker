@@ -254,8 +254,7 @@ public class Parser {
 	 * @return tlist	A cleaned up ArrayList of unused Tokens
 	 */
 	public static ArrayList<Token> sanitize(ArrayList<Token> t_large) {
-		// NOTE: this method may become unnecessary if Ignored Tokens aren't produced by
-		// the Scanner
+		// NOTE: this method may become unnecessary if Ignored Tokens aren't produced by the Scanner
 		ArrayList<Token> tlist = (ArrayList<Token>) t_large.clone();
 		for (int i = 0; i < tlist.size(); i++) {
 			if ((tlist.get(i) instanceof InvalidToken) || (tlist.get(i) instanceof TBlank)
@@ -279,11 +278,11 @@ public class Parser {
 	public static ArrayList<Token> subarray(ArrayList<Token> rec, int start, int end) {
 		int s = start;
 		int e = end;
-		ArrayList<Token> bleh = new ArrayList<Token>();
+		ArrayList<Token> subArr = new ArrayList<Token>();
 
 		for (int i = s; i <= e; i++) {
-			bleh.add(rec.get(i));
+			subArr.add(rec.get(i));
 		}
-		return bleh;
+		return subArr;
 	}
 }

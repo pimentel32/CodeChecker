@@ -6,7 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
+import java.util.List; 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -26,7 +26,6 @@ import org.springframework.web.multipart.MultipartFile;
 import com.checkerWeb.checker.checkerBase.driver.Application;
 import com.checkerWeb.checker.model.UserSelection;
 import com.checkerWeb.checker.service.FilesStorageService;
-import com.checkerWeb.checker.controller.CheckerController;
 
 @Controller
 public class CheckerController {
@@ -86,7 +85,8 @@ public class CheckerController {
 	    return "result";		  
 	}
 	
-	//Downloads a text file with comparison result
+	 /* Adapted from https://www.baeldung.com/spring-controller-return-image-file
+	  * Downloads a text file with comparison result*/
 	@RequestMapping("/download")
 	public ResponseEntity<ByteArrayResource> downloadComparison() throws IOException {
 	
