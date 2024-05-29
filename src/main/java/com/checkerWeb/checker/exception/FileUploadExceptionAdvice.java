@@ -15,7 +15,7 @@ public class FileUploadExceptionAdvice {
   public String handleMaxSizeException(Model model, MaxUploadSizeExceededException e) {
 	  
     List<String> messages = new ArrayList<>();
-    messages.add("One of selected files is too large!");
+    messages.add("Upload is too large! Please remain under 10MB");
     model.addAttribute("messages", messages);
 
     return "errorPage";

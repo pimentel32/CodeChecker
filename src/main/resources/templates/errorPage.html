@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+	<meta charset="ISO-8859-1">
+	<link rel="stylesheet" href="CSS/result_style.css" />
+	<title>Error Page</title>
 </head>
 <body>
-	<h1>ERROR PAGE</h1>
-	<p th:text="${messages}"><p/>
+	<header>
+	  <div class="info-container">
+	  	<h2>ERROR</h2>
+	    <p th:text="${messages}"><p/>
+	    <div class="link-container">
+	    	<a href="/upload"> Try again </a>
+	    </div>
+	  </div>
+	</header>
 </body>
 </html>
+
