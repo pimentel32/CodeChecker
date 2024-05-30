@@ -40,7 +40,7 @@ public class CheckerController {
 	private String output_location;
 	
 	//Retrieves user input
-	@GetMapping("/upload")
+	@GetMapping("/")
     public String retrieveUserInput(Model model) {	
 		storageService.deleteAll();
 		storageService.init();
@@ -53,7 +53,7 @@ public class CheckerController {
     }
 	
 	//Checks file extension and sends it to the checker base for processing
-	@PostMapping("/upload")
+	@PostMapping("/")
 	public String uploadFiles(@RequestParam("files") MultipartFile[] files, @ModelAttribute("input") UserSelection input, Model model) {
 		
 		String[] files_args = {input_location, input.getLanguage()};

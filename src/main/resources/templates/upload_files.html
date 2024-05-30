@@ -23,7 +23,7 @@
 	    <p> The application currently works on Java and C++. </p>	
     </div>
     
- 	<form method="post" class="file-uploader" th:action="@{/upload}" enctype="multipart/form-data" th:object="${input}">
+ 	<form method="post" class="file-uploader" th:action="@{/}" enctype="multipart/form-data" th:object="${input}">
         <div class="input-area">
 	        <label>Specify percent:</label>
 	        <input type="number" th:field="*{percent}" min="0" max="100" />%<br/>

@@ -11,11 +11,11 @@
 <body>
 	<h1>RESULT</h1>
 	<div class="link-container">
-	 	<a href = "/upload">Try again!</a><br/>
+	 	<a href = "/">Try again!</a><br/>
 	   	<a href = "/download">Download results</a>
 	</div>
 	<div align="center" class="info-container">
-		<form th:action="@{/upload}">
+		<form th:action="@{/}">
 			<div class="input-container">
 				<p>Minimum similarity percentage: </p><span th:text="${input.percent}"></span>%<br/> 
 			   	<p>File extension selected: </p><span th:text="${input.language}"></span><br/> 
