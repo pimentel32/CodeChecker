@@ -1010,12 +1010,13 @@ public class Lexer
     {
         try
         {
+        	InputStream is =  Lexer.class.getResourceAsStream("pruebita.txt");
+            System.out.println("AVAILABLE:" + is.available());
+        	
             DataInputStream s = new DataInputStream(
                 new BufferedInputStream(
                 Lexer.class.getResourceAsStream("lexer.dat")));
             
-            InputStream is =  Lexer.class.getResourceAsStream("lexer.dat");
-            System.out.println("AVAILABLE:" + is.available());
 
             // read gotoTable
             int length = s.readInt();
