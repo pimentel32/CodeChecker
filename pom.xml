@@ -47,7 +47,9 @@
             <includes>
                 <include>**/*.dat</include>
             </includes>
-          
+            <excludes>
+                <exclude>**/*.java</exclude>
+            </excludes>
         </resource>
     </resources>
 		
