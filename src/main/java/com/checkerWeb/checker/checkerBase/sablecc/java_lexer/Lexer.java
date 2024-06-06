@@ -1010,7 +1010,7 @@ public class Lexer
     {
         try
         {
-        	InputStream is =  Lexer.class.getResourceAsStream("pruebita.txt");
+        	InputStream is =  Lexer.class.getResourceAsStream("pruebita");
             System.out.println("AVAILABLE:" + is.available());
         	
             DataInputStream s = new DataInputStream(
