@@ -37,13 +37,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				
-				<configuration>
-					 <includes>
-                		<include>**/*.dat</include>
-            		</includes>
-				</configuration>
-				  
 			</plugin>
 		</plugins>
 	</build>
