@@ -4,6 +4,7 @@ RUN mkdir /build
 COPY . /build
 RUN dir -s  
 WORKDIR /build
+RUN dir -s  
 RUN mvn clean package -DskipTests
 
 ## Package stage#
@@ -11,4 +12,5 @@ FROM eclipse-temurin:21-jdk
 RUN mkdir /app
 COPY --from=builder /build/target/checker-0.0.1-SNAPSHOT.jar /app/checker.jar
 WORKDIR /app
+RUN dir -s  
 CMD ["java","-jar","checker.jar"]
