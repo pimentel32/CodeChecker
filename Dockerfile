@@ -3,7 +3,7 @@ FROM maven:3.9.6-eclipse-temurin-21 AS builder
 RUN mkdir /build
 COPY . /build
 WORKDIR /build
-RUN mvn clean package -DskipTests
+RUN mvn clean package
 
 ## Package stage#
 FROM eclipse-temurin:21-jdk
