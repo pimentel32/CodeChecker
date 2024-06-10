@@ -3,7 +3,6 @@ FROM maven:3.9.6-eclipse-temurin-21 AS builder
 RUN mkdir /build
 COPY . /build
 WORKDIR /build
-RUN dir -s  
 RUN mvn clean package -DskipTests
 
 ## Package stage#
@@ -11,7 +10,6 @@ FROM eclipse-temurin:21-jdk
 RUN mkdir /app
 COPY --from=builder /build/target/checker-0.0.1-SNAPSHOT.jar /app/checker.jar
 WORKDIR /app
-RUN dir -s  
-RUN ls
+RUN ls -R
 RUN jar tvf checker.jar
 CMD ["java","-jar","checker.jar"]
