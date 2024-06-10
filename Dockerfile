@@ -10,5 +10,5 @@ FROM eclipse-temurin:21-jdk
 RUN mkdir /app
 COPY --from=builder /build/target/checker-0.0.1-SNAPSHOT.jar /app/checker.jar
 WORKDIR /app
-CMD ["java","-jar","checker.jar"]
 jar tvf checker.jar
+CMD ["java","-jar","checker.jar"]
