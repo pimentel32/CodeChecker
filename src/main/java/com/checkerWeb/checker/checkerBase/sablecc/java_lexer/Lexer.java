@@ -3,6 +3,8 @@
 package com.checkerWeb.checker.checkerBase.sablecc.java_lexer;
 
 import java.io.*;
+
+import com.checkerWeb.checker.CheckerApplication;
 import com.checkerWeb.checker.checkerBase.sablecc.node.*;
 
 @SuppressWarnings("nls")
@@ -1010,14 +1012,22 @@ public class Lexer
     {
         try
         {
-        	InputStream is =  Lexer.class.getResourceAsStream("pruebita");
-            System.out.println("AVAILABLE:" + is.available());
+        	//File jarDir = new File(CheckerApplication.class.getProtectionDomain().getCodeSource().getLocation().getPath());
+        	//String jarDirpath = jarDir.getParent();
+        	//System.out.println("Current Dir: " + jarDirpath);
+        	
+        	//InputStream is =  Lexer.class.getResourceAsStream("pruebita.txt");
+            //System.out.println("AVAILABLE:" + is.available());
         	
             DataInputStream s = new DataInputStream(
                 new BufferedInputStream(
-                Lexer.class.getResourceAsStream("lexer.dat")));
+           //     Lexer.class.getResourceAsStream("./lexer.dat")));
+           
+            //  Use this method instead in jar file   		
+              Lexer.class.getClassLoader().getResourceAsStream("lexer.dat")));
+                		
             
-
+            
             // read gotoTable
             int length = s.readInt();
             gotoTable = new int[length][][][];
@@ -1056,7 +1066,6 @@ public class Lexer
         }
         catch(Exception e)
         {
-        	System.out.println("MESSAGE:------------------" + e.toString());
             throw new RuntimeException("The file \"lexer.dat\" is either missing or corrupted.");
         }
     }

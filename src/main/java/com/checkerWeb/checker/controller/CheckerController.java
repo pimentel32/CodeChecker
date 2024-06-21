@@ -36,8 +36,8 @@ public class CheckerController {
 	@Value("${input_loc}")
 	private String input_location;
 	
-	@Value("${output_loc}")
-	private String output_location;
+	@Value("${output_file}")
+	private String output_file;
 	
 	//Retrieves user input
 	@GetMapping("/")
@@ -71,7 +71,7 @@ public class CheckerController {
 					if (input.getLanguage().equals("." + extension)) {
 						storageService.save(file);
 						messages.add(file.getOriginalFilename() + "  -  <Successful>");
-						Application.run(files_args, input.getPercent(), output_location);
+						Application.run(files_args, input.getPercent(), output_file);
 					}else {
 						messages.add(file.getOriginalFilename() + "  -  <Invalid Extension>");
 					}
@@ -90,7 +90,7 @@ public class CheckerController {
 	@RequestMapping("/download")
 	public ResponseEntity<ByteArrayResource> downloadComparison() throws IOException {
 	
-		Path root = Paths.get(output_location);
+		Path root = Paths.get(output_file);
 			
 		byte[] exportedFileData = Files.readAllBytes(root);
 		ByteArrayResource byteArrayResource = new ByteArrayResource(exportedFileData);
